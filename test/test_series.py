@@ -1,10 +1,13 @@
 from factorial.series import fibonacci, lucas, sum_series
 
+
 def test_fibonacci_zero():
     assert fibonacci(0) == 0
 
+
 def test_fibonacci_one():
     assert fibonacci(1) == 1
+
 
 def test_fibonacci_two():
     assert fibonacci(2) == 1
@@ -16,6 +19,10 @@ def test_fibonacci_five():
 
 def test_fibonacci_eight():
     assert fibonacci(8) == 21
+
+
+def test_lucas_zero():
+    assert lucas(0) == 2
 
 
 def test_lucas_one():
@@ -34,6 +41,10 @@ def test_lucas_eight():
     assert lucas(8) == 47
 
 
+def test_sum_series_fibonacci_zero():
+    assert sum_series(0) == 0
+
+
 def test_sum_series_fibonacci_one():
     assert sum_series(1) == 1
 
@@ -48,6 +59,11 @@ def test_sum_series_fibonacci_five():
 
 def test_sum_series_fibonacci_eight():
     assert sum_series(8) == 21
+
+
+def test_sum_series_lucas_zero():
+    assert sum_series(0,2,1) == 2
+
 
 def test_sum_series_lucas_one():
     assert sum_series(1,2,1) == 1
