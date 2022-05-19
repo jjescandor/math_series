@@ -79,3 +79,27 @@ def test_sum_series_lucas_five():
 
 def test_sum_series_lucas_eight():
     assert sum_series(8,2,1) == 47
+
+
+def test_sum_series_other_zero():
+    assert sum_series(0,3,1) == 3
+
+
+def test_sum_series_other_one():
+    assert sum_series(1,3,1) == 1
+
+
+def test_sum_series_other_two():
+    assert sum_series(2,3,1) == 4
+
+
+def test_sum_series_other_three():
+    assert sum_series(3,3,1) == 5
+
+
+def test_sum_series_other_four():
+    assert sum_series(4,3,1) == 9
+
+
+def test_sum_series_other_five():
+    assert sum_series(5,3,1) == 14

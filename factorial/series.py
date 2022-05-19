@@ -22,10 +22,14 @@ def lucas(n):
         return lucas(n-1) + lucas(n-2)
 
 
-def sum_series(n, num_zero = 0, num_one=1, ):
-    if num_zero == 0 and num_one == 1:
-        return fibonacci(n)
-    elif num_zero == 2 and num_one == 1:
-        return lucas(n)
+def sum_series(n, num_zero=0, num_one=1):
+    if n < 0:
+        return 'incorrect input'
+    elif n == 0:
+        return num_zero
+    elif n == 1:
+        return num_one
+    else:
+        return sum_series(n-1, num_zero, num_one) + sum_series(n-2, num_zero, num_one)
 
 
